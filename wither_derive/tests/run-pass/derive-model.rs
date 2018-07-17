@@ -9,6 +9,7 @@ extern crate wither;
 extern crate wither_derive;
 
 use wither::Model;
+use mongodb::coll::options::IndexModel;
 
 #[derive(Serialize, Deserialize, Model)]
 #[model(collection_name="valid_data_models_0", skip_serde_checks="false")]
@@ -20,6 +21,10 @@ struct ValidDataModel0 {
     /// Another field being indexed.
     #[model(index(direction="asc"))]
     field0: String,
+
+    /// Another field being indexed.
+    #[model(index(direction="dsc"))]
+    field1: String,
 }
 
 fn main() {}

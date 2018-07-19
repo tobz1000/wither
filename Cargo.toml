@@ -16,7 +16,7 @@ version = "0.5.2"
 bson = "^0.12.0"
 chrono = "^0.4.0"
 log = "^0.4.0"
-mongodb = "^0.3.0"
+mongodb = { git = "https://github.com/tobz1000/mongo-rust-driver-prototype.git" }
 serde = "^1.0.0"
 serde_derive = "1.0.0"
 
